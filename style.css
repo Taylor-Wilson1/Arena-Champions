@@ -1,0 +1,255 @@
+/* 
+Title: ArenaChampion.App
+Name: Taylor Wilson
+City: West Monroe
+State: Louisiana */
+
+
+body {
+    background: black;
+}
+
+p {
+    color: white;
+    display: flex;
+    margin:0;
+    display:inline;
+    float:left;
+}
+
+button {
+    color: White;
+    position: fixed;
+    bottom: 20%;
+    left: 47%;
+
+    background-color: Transparent;
+    border-color: white;
+    width: 100px;
+    height: 25px;
+}
+
+#Introductory{
+    position: fixed;
+    top: 10%;
+    left: 40%;   
+    width: 350px;
+    height: 100px;
+
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    
+    max-width: 300px; 
+    display: inline-block;
+}
+
+#Start_Match{
+    position: fixed;
+    top: 10%;
+    left: 40%;   
+    width: 300px;
+    height: 100px;
+
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    
+    max-width: 270px; 
+    display: inline-block;
+}
+
+
+.hide{
+    visibility: hidden;
+    display: none;
+}
+
+.show{
+    visibility: visible;
+    display: inline-block;
+}
+
+.Character_One_Container {
+    position: fixed;
+
+    top: 10%;
+    left: 15%; 
+    background-size: 5000px;
+    width: 500px;
+    height: 602px;
+}
+
+.Character_One_Attack{
+    position: fixed;
+    
+    top: 10%;
+    left: 15%;  
+    
+    background: url("Character_One/Attack/Attack.png") no-repeat;
+    background-size: 5000px;
+
+    width: 500px;
+    height: 602px;
+
+    animation: attack 1s steps(10) infinite;
+}
+
+.Character_One_Dead{
+    position: fixed;
+    
+    top: 13%;
+    
+    background: url("Character_One/Dead/Dead.png") 0 0 no-repeat;
+    
+    background-size: 7800px;
+
+    width: 800px;
+    height: 602px;
+
+    animation: dead 1s steps(9) forwards;
+}
+
+.Character_One_Idle{
+    position: fixed;
+    
+    top: 10%;
+    left: 15%;   
+    
+    background: url("Character_One/Idle/Idle.png") 0 0 no-repeat;
+    background-size: 5000px;
+    
+
+    width: 500px;
+    height: 602px;
+
+    animation: idle 1s steps(10) infinite;
+}
+
+#Character_One_Name {
+    color: white;
+    position: fixed;
+    bottom: 10%;
+    left: 25%;
+}
+
+#Character_One_HealthPoints {
+    color: white;
+    position: fixed;
+    bottom: 5%;
+    left: 25%;
+}
+
+/* #Character_One_DamageTaken {
+    color: red;
+    position: fixed;
+    top: 17%;
+    left: 35%;
+
+} */
+
+/* Character Two */
+.Character_Two_Container {
+    position: fixed;
+
+    top: 10%;
+    right: 15%; 
+    background-size: 5000px;
+    width: 500px;
+    height: 602px;
+}
+
+.Character_Two_Attack{
+    position: fixed;
+    
+    top: 10%;
+    right: 15%; 
+    
+    background: url("Character_Two/Attack/Attack.png") no-repeat;
+    background-size: 5000px;
+
+    width: 500px;
+    height: 602px;
+
+    animation: attack 1s steps(10) infinite;
+    transform: rotateY(180deg);
+}
+
+.Character_Two_Dead{
+    position: fixed;
+    
+    top: 13%;
+    right: 0%; 
+    background: url("Character_Two/Dead/Dead.png") no-repeat;
+    
+    background-size: 7800px;
+
+
+    width: 800px;
+    height: 602px;
+    animation: dead 1s steps(9) forwards;
+    transform: rotateY(180deg);
+}
+
+.Character_Two_Idle{
+    position: fixed;
+    
+    top: 10%;
+    right: 15%;    
+    
+    background: url("Character_Two/Idle/Idle.png") no-repeat;
+    background-size: 5000px;
+
+    width: 500px;
+    height: 602px;
+
+    animation: idle 1s steps(10) infinite;
+    transform: rotateY(180deg);
+}
+
+#Character_Two_Name {
+    color: white;
+    position: fixed;
+    bottom: 10%;
+    right: 27%;
+}
+
+#Character_Two_HealthPoints {
+    color: white;
+    position: fixed;
+    bottom: 5%;
+    right: 28.7%;
+}
+
+/* #Character_Two_DamageTaken {
+    color: red;
+    position: fixed;
+    top: 17%;
+    right: 35%;
+
+} */
+
+
+@keyframes attack {
+    100% {
+        background-position: -5000px, 0;
+    }
+}
+@keyframes dead { 
+
+    from {
+        background-position-x: -0px;
+    }
+    to  {
+        background-position-x: -7020px;
+    }
+
+}
+
+
+@keyframes idle {
+    100% {
+        background-position: -5000px, 0;
+    }
+}
+

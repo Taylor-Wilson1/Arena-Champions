@@ -1,0 +1,73 @@
+<!-- Title: ArenaChampion.App
+Name: Taylor Wilson
+City: West Monroe
+State: Louisiana  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>   
+
+    <div class="Character_One_Container">
+      <div class="Character_One_Idle"></div>
+      <div id="Character_One_Name" class="hide"></div>
+      <div id="Character_One_HealthPoints" class="hide"></div>
+    </div>
+
+    <div class="Character_Two_Container"></div>
+      <div class="Character_Two_Idle"></div>
+      <div id="Character_Two_Name" class="hide"></div>
+      <div id="Character_Two_HealthPoints" class="hide"></div>
+    </div>
+
+    <div id="Introductory" class="hide">
+      <p>Welcome to the Arena!</p>
+      <br>
+      <p>&nbsp;Lets welcome our Champions</p>
+      <p>&nbsp;to the stage!</p>
+      <br>
+
+      <p>&nbsp;</p>
+      <p id="fighter1-name2"></p>
+      <p>&nbsp;has entered the arena with&nbsp;</p>
+      <p id="fighter1-healthPoints"></p>
+      <p>&nbsp;health.&nbsp;</p>
+      <br>
+
+      <p>&nbsp;</p>
+      <p id="fighter2-name2"></p>
+      <p>&nbsp;has entered the arena with&nbsp;</p>
+      <p id="fighter2-healthPoints"></p>
+      <p>&nbsp;health.</p>
+    </div>
+
+    <div id="Start_Match" class="hide">
+
+      <!-- <p id="combat_log"></p> -->
+      <p id="attacker_name_1"></p>
+      <p>&nbsp;attacked&nbsp;</p>
+      <p id="target_name_1"></p>
+      <p>.&nbsp;</p>
+      <br>
+
+      <p id="target_name_2"></p>
+      <p>&nbsp;was dealt&nbsp;</p>
+      <p id="damage"></p>
+      <p>&nbsp;damage.&nbsp;</p>
+      <br>
+
+      <p id="target_name_3"></p>
+      <p id="switchOut1">'s health is&nbsp;</p>
+      <p id="target_HealthPoints" class="show"></p>
+      <p id="switchOut2">.</p>
+      <p id="switchIn" class="hide">&nbsp;has been defeated!</p>
+
+    </div>
+  
+    <button id="btn">Start Match</button>
+
+    <script type="module" src="Program.js"></script>
+  </body>
+</html>
