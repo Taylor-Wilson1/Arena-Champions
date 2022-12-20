@@ -22,8 +22,6 @@ jobs:
             ${{ runner.os }}-gatsby-alexhyett-site-build-
       - name: Install dependencies
         run: yarn install
-      - name: Run Lint
-        run: ./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public
       - name: Build
         run: gatsby build
       - name: Set AWS credentials
